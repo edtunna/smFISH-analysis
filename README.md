@@ -6,7 +6,7 @@ This repository contains an image analysis pipeline for quantifying nascent tran
 
 The workflow combines manual identification and annotation of transcription sites in Fiji/ImageJ with computational processing of the resulting measurements.
 
-The analysis includes:
+Basic steps include:
 
 1. Conversion of microscopy images into TIFF format.
 2. Randomisation of image filenames to facilitate blinded analysis.
