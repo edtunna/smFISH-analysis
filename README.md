@@ -11,7 +11,8 @@ Basic steps include:
 1. Conversion of microscopy images into TIFF format.
 2. Randomisation of image filenames to facilitate blinded analysis.
 3. Manual annotation of nascent transcription sites and corresponding nuclear and extracellular control regions.
-5. Export of annotation coordinates and cell counts for downstream analysis.
+4. Export of annotation coordinates and cell counts for downstream analysis.
+5. Quantification of spot intensity values and collation of summary statistics.
 
 ## Software requirements
 
