@@ -10,7 +10,7 @@ Depending on cell density and microscope configuration, approximately 8–12 ima
 
 ## 2. Image conversion and preparation
 
-If images were acquired at multiple positions using the Tiles feature in Zeiss ZEN software, use the Fiji/ImageJ macro `batchExport_split.ijm` to convert `.czi` files into `.tif` files.
+Use the Fiji/ImageJ macro `batchExport_split.ijm` to convert `.czi` files into `.tif` files.
 
 1. Create a folder named `TIFFs` within the directory containing the original microscopy images.
 2. Open `batchExport_split.ijm` in Fiji and select **Run**.
