@@ -1,0 +1,95 @@
+# Experiment-specific settings for image analysis
+
+# IMPORTANT: Edit all the parameters with  ### *** ### surrounding them, 
+# and save this file as "settings.yaml" in the same directory as your notebooks.
+
+# ============================================================================
+# EXPERIMENT METADATA
+# ============================================================================
+experiment:
+  # Date of experiment (no time component)
+  ### *** ###
+  date: "" # e.g."2024-02-01"
+  ### *** ###
+
+  # Date format in original filenames
+  # e.g. "2024-02-01" uses "%Y-%m-%d", "01022024" uses "%d%m%Y"
+  # Use %Y for four-digit year format
+  ### *** ###
+  dateFormat: "%Y-%m-%d"
+  ### *** ###
+
+# ============================================================================
+# MICROSCOPY SETTINGS
+# ============================================================================
+microscopy:
+  # Pixel size (in micrometers) for Z, Y, X dimensions
+  # Order matters: [Z, Y, X]
+  ### *** ###
+  ZYXscalar: [] # e.g. [0.24, 0.172, 0.172]
+  ### *** ###
+  # Channel names in order they were acquired on microscope
+  ### *** ###
+  channelNames: [""] # e.g. ["Myc", "Sox2", "DAPI"]
+  ### *** ###
+
+# ============================================================================
+# ANALYSIS PARAMETERS
+# ============================================================================
+analysis:
+  # Name of target FISH channel (must match one in channelNames)
+  ### *** ###
+  fishSuffix: "" # e.g. "Sox2"
+  ### *** ###
+
+  # Which channel contains DAPI images? (0-based indexing)
+  ### *** ###
+  nucChan: # e.g. 1
+  ### *** ###
+
+  # Which channel contains cell images? (0-based indexing)
+  ### *** ###
+  cellChan: # e.g. 0
+  ### *** ###
+
+  # Spot measurement cylinder size (in pixels) – do not edit
+  spotRadius: 
+  spotHeight: 
+
+  # Cropped meta image size (in pixels) – do not edit
+  metaRadius: 
+  metaHeight: 
+
+  # Metadata parameters for plotting – do not edit (will do in notebook)
+  metadata_for_plotting:
+
+# ============================================================================
+# FILE PATHS
+# ============================================================================
+paths:
+
+  # Base directory
+  ### *** ###
+  inputFolderPath: "path/to/your/analysis/folder" 
+  ### *** ###
+
+  # Base directory where TIFF images are stored
+  ### *** ###
+  tiffPath: "path/to/your/tiff/folder"
+  ### *** ###
+
+  # Directory containing manually analyzed files (Counts and XY CSVs)
+  # Set relative to tiffPath by default
+  ### *** ###
+  dataPath: "path/to/your/manual_analysis/folder"
+  ### *** ###
+
+  # Output folder path for saving results
+  ### *** ###
+  outputFolderPath: "path/to/your/results/folder"
+  ### *** ###
+
+  # File list of XY coordinates – do not edit
+  xyFilesPath:
+  ctFilesPath:
+  
