@@ -2,7 +2,7 @@
 getDimensions(imW, imH, imC, imS, imF);
 Stack.setDisplayMode("color");
 for (ii = 0; ii < imC; ii++){
-	Stack.setPosition(ii+1,25,1);
+	Stack.setPosition(ii+1,imS/2,1);
 //	if (imC == 2){
 //		if (ii == 0){
 //			waitForUser;
@@ -33,7 +33,7 @@ for (jj=0; jj<imList.length; jj++){
 			Stack.setPosition(kk,ii+1,1);
 			run("Set Label...", "label=[ ]");
 		}
-		Stack.setPosition(kk+1,25,1);
+		Stack.setPosition(kk+1,imS/2,1);
 	}
 	
 	// get z-axis profile for one image and separate channels for the other
